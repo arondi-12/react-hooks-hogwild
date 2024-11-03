@@ -1,0 +1,10 @@
+.hogs {
+    display: flexbox;
+    gap: 1rem;
+
+}
+
+.hog {
+    border: 1px solid #000;
+    padding: 10px;
+}

@@ -1,10 +1,148 @@
-.hogs {
-    display: flexbox;
-    gap: 1rem;
-
+/* General Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Navbar */
+.nav {
+    width: 100%;
+    background-color: #0082e6;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Hogs Container */
+.hogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+/* Individual Hog Tile */
 .hog {
-    border: 1px solid #000;
-    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.hog:hover {
+    transform: scale(1.05);
+}
+
+.hog img {
+    border-radius: 50%;
+    margin-top: 0.5rem;
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.hog h3 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.hog-details {
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.hog-details p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0.25rem 0;
+}
+
+/* Button Styling */
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #0082e6;
+    color: white;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.hog-details button {
+    background-color: #ff5f5f;
+}
+
+.hog-details button:hover {
+    background-color: #ff3d3d;
+}
+
+/* Form Styling */
+.add-hog-form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+    width: 100%;
+}
+
+.add-hog-form h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.add-hog-form label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+.add-hog-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.add-hog-form button {
+    width: 100%;
+    background-color: #28a745;
+}
+
+.add-hog-form button:hover {
+    background-color: #218838;
+}
+
+/* Spacing for Filter and Sort Controls */
+.filter-controls, .sort-controls {
+    margin-bottom: 1rem;
 }

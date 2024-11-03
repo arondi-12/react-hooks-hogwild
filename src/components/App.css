@@ -57,6 +57,7 @@ body {
     width: 100px;
     height: 80px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .hog h3 {
@@ -90,6 +91,7 @@ button {
 
 button:hover {
     background-color: #005bb5;
+    
 }
 
 .hog-details button {
@@ -102,7 +104,7 @@ button:hover {
 
 /* Form Styling */
 .add-hog-form {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
